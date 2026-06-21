@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kampoeng Heritage Kajoetangan — Wisata Sejarah Kota Malang</title>
+  <title>Kajoetangan Heritage</title>
+  <link rel="icon" type="image/jpeg" href="img/title.jpeg" />
   <meta name="description" content="Jelajahi Kampoeng Heritage Kajoetangan, kampung wisata bersejarah sejak abad ke-13 di Kota Malang. Temukan kuliner, café, spot foto, dan rumah sejarah kolonial." />
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
@@ -65,12 +66,20 @@
       padding: 12px 32px;
     }
     .navbar__logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
       font-weight: 800;
       font-size: 1.2rem;
       color: #fff;
       text-decoration: none;
       letter-spacing: -0.5px;
       transition: var(--transition);
+    }
+    .navbar__logo img {
+      height: 40px;
+      border-radius: 2px;
+      object-fit: contain;
     }
     .navbar.scrolled .navbar__logo { color: var(--clr-text); }
     .navbar__links {
@@ -642,7 +651,7 @@
 
   <!-- Navbar -->
   <nav class="navbar" id="navbar">
-    <a href="#" class="navbar__logo">Kajoetangan</a>
+    <a href="#" class="navbar__logo"><img src="img/navbar.png" alt="Logo Kajoetangan" /></a>
     <ul class="navbar__links" id="navLinks">
       <li><a href="#tentang">Tentang</a></li>
       <li><a href="#katalog">Katalog</a></li>
